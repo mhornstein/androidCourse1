@@ -78,9 +78,9 @@ public class BookmarksActivity extends Activity {
 
 		Log.i(TAG, "Entered startGoToDangerousActivity()");
 
-		// TODO - Start the GoToDangerousActivity
-		
-
+		//implicit activity starting. the argument is a string representing the action
+		Intent intent = new Intent("course.labs.permissions.DANGEROUS_ACTIVITY");
+		startActivity(intent);
 	}
 
 }
