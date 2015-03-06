@@ -9,7 +9,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class GoToDangerousActivity extends Activity {
-	
+
 	private static final String TAG = "Lab-Permissions";
 
 	private static final String DANGEROUS_ACTIVITY_ACTION = "course.labs.permissions.DANGEROUS_ACTIVITY";
@@ -36,8 +36,10 @@ public class GoToDangerousActivity extends Activity {
 
 		Log.i(TAG, "Entered startDangerousActivity()");
 
-		startActivity(new Intent(DANGEROUS_ACTIVITY_ACTION));
-		
+		//implicit activity starting. the argument is a string representing the action
+		Intent intent = new Intent("course.labs.permissions.DANGEROUS_ACTIVITY");
+		startActivity(intent);
+
 
 	}
 
